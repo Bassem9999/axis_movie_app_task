@@ -1,6 +1,6 @@
 import 'package:axis_movie_app_task/features/details/controllers/models/peoples_details_model.dart';
 import 'package:axis_movie_app_task/features/details/controllers/models/peoples_images_model.dart';
-import 'package:axis_movie_app_task/utils/functions.dart';
+import 'package:axis_movie_app_task/core/utils/functions.dart';
 import 'package:flutter/material.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 import '../repositories/peoles_details_repo.dart';

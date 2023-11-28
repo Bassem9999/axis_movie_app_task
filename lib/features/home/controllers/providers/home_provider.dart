@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:axis_movie_app_task/features/home/controllers/models/peoples_model.dart';
 import 'package:axis_movie_app_task/features/home/controllers/repositories/home_repo.dart';
-import 'package:axis_movie_app_task/utils/functions.dart';
+import 'package:axis_movie_app_task/core/utils/functions.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';

@@ -1,7 +1,8 @@
-import 'package:axis_movie_app_task/utils/functions.dart';
+import 'package:axis_movie_app_task/core/utils/functions.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../core/constants/end_points.dart';
 import '../../controllers/providers/peoles_details_provider.dart';
 import '../widgets/people_images_card_widget.dart';
 
@@ -44,7 +45,7 @@ class _PeoplesDetailsScreenState extends State<PeoplesDetailsScreen> {
               width: deviceWidth(context),
               decoration: BoxDecoration(
                // color: Colors.red,
-                image: DecorationImage(image: NetworkImage("https://www.themoviedb.org/t/p/w235_and_h235_face${value.peopleDetailsModel!.profilePath}"),fit: BoxFit.cover)
+                image: DecorationImage(image: NetworkImage("${EndPoints.imageBasePath}${value.peopleDetailsModel!.profilePath}"),fit: BoxFit.cover)
               ),
             ),
 

@@ -1,6 +1,7 @@
+import 'package:axis_movie_app_task/core/constants/end_points.dart';
 import 'package:axis_movie_app_task/features/details/view/screens/peoples_details_screen.dart';
 import 'package:axis_movie_app_task/features/home/controllers/providers/home_provider.dart';
-import 'package:axis_movie_app_task/utils/functions.dart';
+import 'package:axis_movie_app_task/core/utils/functions.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +27,7 @@ class PeopleCardWidget extends StatelessWidget {
             width: 130,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              image: DecorationImage(image: NetworkImage("https://www.themoviedb.org/t/p/w235_and_h235_face${value.peoplesList[index].profilePath}"))
+              image: DecorationImage(image: NetworkImage("${EndPoints.imageBasePath}${value.peoplesList[index].profilePath}"))
             ),
           ),
           const SizedBox(width: 10,),
